@@ -25,4 +25,4 @@ jobs:
       run: go mod init pluginhook && go mod tidy && go build -o ./pluginhook ./pluginhook.go
 
     - name: Test
-      run: go mod init pluginhook && go mod tidy && go test -v ./pluginhook.go
+      run: go test -v ./pluginhook.go
