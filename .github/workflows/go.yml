@@ -22,7 +22,7 @@ jobs:
         go-version: '1.20'
 
     - name: Build
-      run: go mod init && go build -o ./pluginhook ./pluginhook.go
+      run: go mod init pluginhook && go build -o ./pluginhook ./pluginhook.go
 
     - name: Test
-      run: go mod init && go test -v ./pluginhook.go
+      run: go mod init pluginhook && go test -v ./pluginhook.go
