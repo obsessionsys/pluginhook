@@ -31,8 +31,6 @@ jobs:
     - name: Test
       run: go test -v ./pluginhook.go
     
-
-  release-linux-amd64:
     - name: release linux/amd64
       runs-on: ubuntu-latest
       steps:
